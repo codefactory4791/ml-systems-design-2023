@@ -1,0 +1,4 @@
+steps:
+# build an image named gcr.io/designing-ml-systems/train:latest on cloudbuild machines
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', 'unit-2/app',  '-t', 'serving-application']
